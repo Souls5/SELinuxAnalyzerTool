@@ -1,0 +1,4 @@
+# 无冲突的示例策略
+allow httpd_t var_t: file { read write };
+allow user_t etc_t: file read;
+neverallow admin_t secret_t: file write;

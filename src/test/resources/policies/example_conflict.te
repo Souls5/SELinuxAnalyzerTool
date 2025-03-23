@@ -1,0 +1,3 @@
+# 含冲突的示例策略
+allow ping_t net_raw_t: raw_socket { read write };
+neverallow ping_t net_raw_t: raw_socket write;
